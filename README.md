@@ -60,6 +60,19 @@ There is no leaderboard or challenge for these datasets, but we encourage resear
 
 <sub><sup>The BG-Gap, or the difference between Mixed-Same and Mixed-Rand, measures the impact of background correlations in the presence of correct-labeled foregrounds.</sup></sub>
 
+## Training Data
+**Updated June 24, 2020**: We are releasing all training data that we used to train models described in the paper. The download links are as follows:
+[IN-9L](https://www.dropbox.com/s/8w29bg9niya19rn/in9l.tar.gz?dl=0),
+[Mixed-Next](https://www.dropbox.com/s/4hnkbvxastpcgz2/mixed_next.tar.gz?dl=0),
+[Mixed-Rand](https://www.dropbox.com/s/cto15ceadgraur2/mixed_rand.tar.gz?dl=0),
+[Mixed-Same](https://www.dropbox.com/s/f2525w5aqq67kk0/mixed_same.tar.gz?dl=0),
+[No-FG](https://www.dropbox.com/s/0v6w9k7q7i1ytvr/no_fg.tar.gz?dl=0),
+[Only-BG-B](https://www.dropbox.com/s/u1iekdnwail1d9u/only_bg_b.tar.gz?dl=0),
+[Only-BG-T](https://www.dropbox.com/s/03lk878q73hyjpi/only_bg_t.tar.gz?dl=0),
+[Only-FG](https://www.dropbox.com/s/alrf3jo8yyxzyrn/only_fg.tar.gz?dl=0),
+[Original](https://www.dropbox.com/s/0vv2qsc4ywb4z5v/original.tar.gz?dl=0).
+
+Each downloadable dataset contains both training data and validation data generated in the same way as the training data (that is, with no manual cleaning); this validation data can be safely ignored.
 
 
 ## Citation
