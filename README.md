@@ -20,7 +20,7 @@ Thus, the goal of this challenge is to understand how background-robust models c
 ## Running the Backgrounds Challenge Evaluation
 To evaluate your model against adversarial backgrounds, you will need to do the following:
 
-1. Download and unzip the datasets included in the release.
+1. Download and unzip the datasets included in the [release](https://github.com/MadryLab/backgrounds_challenge/releases).
 2. Run `python challenge_eval.py --checkpoint '/PATH/TO/CHECKPOINT' --data-path '/PATH/TO/DATA'`.
 
 The model checkpoint that the script takes as input must be one of the following.
@@ -42,7 +42,7 @@ We invite any interested researchers to submit models and results by submitting 
 
 ImageNet-9 and its variations can be useful for measuring the impact of backgrounds on model decision making&mdash;see the [paper](https://arxiv.org/abs/2006.09994) for more details. You can test your own models on IN-9 and its variations as follows.
 
-1. Download and unzip the datasets included in the release.
+1. Download and unzip the datasets included in the [release](https://github.com/MadryLab/backgrounds_challenge/releases).
 2. Run, for example, `python in9_eval.py --eval-dataset 'mixed_same' --checkpoint '/PATH/TO/CHECKPOINT' --data-path '/PATH/TO/DATA'`. You can replace `mixed_same` with whichever variation of IN-9 you are interested in.
 
 Just like in the challenge, the input can either be a 1000-class ImageNet model or a 9-class IN-9 model.
@@ -72,7 +72,7 @@ There is no leaderboard or challenge for these datasets, but we encourage resear
 [Only-FG](https://www.dropbox.com/s/alrf3jo8yyxzyrn/only_fg.tar.gz?dl=0),
 [Original](https://www.dropbox.com/s/0vv2qsc4ywb4z5v/original.tar.gz?dl=0).
 
-Each downloadable dataset contains both training data and validation data generated in the same way as the training data (that is, with no manual cleaning); this validation data can be safely ignored.
+Each downloadable dataset contains both training data and validation data generated in the same way as the training data (that is, with no manual cleaning); this validation data can be safely ignored. The test data in the [release](https://github.com/MadryLab/backgrounds_challenge/releases) should be used instead.
 
 
 ## Citation
