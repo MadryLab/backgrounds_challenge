@@ -11,10 +11,10 @@ Thus, the goal of this challenge is to understand how background-robust models c
 
 ## Backgrounds Challenge Leaderboard
 
-| Model                     | Reference                     | Challenge <br> Accuracy        | Clean Accuracy <br> (on IN-9) |
-|---------------------------|-------------------------------|---------------------------|----------------|
-| ResNet-50                 | (initial entry)               | 22.3%                     | 95.6%          |
-| ResNet-50 ([IN-9L](https://arxiv.org/abs/2006.09994))         | (initial entry)               | 12.0%                     | 96.4%          |
+| Model                     | Reference                     | Challenge <br> Accuracy        | Clean Accuracy <br> (on IN-9) | Download Link
+|---------------------------|-------------------------------|---------------------------|----------------|------------------------|
+| ResNet-50                 | (initial entry)               | 22.3%                     | 95.6%          | [Official Pytorch Model](https://download.pytorch.org/models/resnet50-19c8e357.pth)
+| ResNet-50 ([IN-9L](https://arxiv.org/abs/2006.09994))         | (initial entry)               | 12.0%                     | 96.4%          | [Download](https://www.dropbox.com/s/5bmfiunmlh0hy8n/in9l_resnet50.pt?dl=0)
 
 
 ## Running the Backgrounds Challenge Evaluation
