@@ -2,6 +2,7 @@ import torch as ch
 import dill
 import os
 from tqdm import tqdm as tqdm
+import timm
 
 class InputNormalize(ch.nn.Module):
     '''
@@ -40,8 +41,11 @@ def make_and_restore_model(*_, arch, dataset, resume_path=None,
          parallel=True, pytorch_pretrained=False, use_normalization=True):
     """
     """
-    classifier_model = dataset.get_model(arch, pytorch_pretrained) if \
-                            isinstance(arch, str) else arch
+    if pytorch_pretrained:
+        classifier_model = timm.create_model(arch, pretrained=pytorch_pretrained)
+    else:
+        classifier_model = dataset.get_model(arch, pytorch_pretrained) if \
+                                isinstance(arch, str) else arch
     if use_normalization:
         # Normalize by dataset mean and std, as is standard.
         model = NormalizedModel(classifier_model, dataset)
